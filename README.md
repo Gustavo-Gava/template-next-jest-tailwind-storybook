@@ -1,38 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Template Project Folder Structure
 
-## Getting Started
+This documentation provides an overview of the folder structure used in the Template project. Each folder serves a specific purpose and helps organize the codebase effectively.
 
-First, run the development server:
+## Folder Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Explanation of each folder and its purpose:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### `components`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The `components/` folder contains two subdirectories:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `components/ui/`: Contains shared UI components such as buttons, modals, containers, etc.
+- `components/[form]/`: Contains components specific to a particular context, such as forms, which will be used throughout the application.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### `context`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The `context/` folder contains application contexts. Here is an example:
 
-## Learn More
+- `context/AuthProvider.tsx`: Defines the AuthProvider that manages authentication-related state.
 
-To learn more about Next.js, take a look at the following resources:
+### `hooks`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The `hooks/` folder contains custom hooks used in the application. Here is an example:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `hooks/useAuth.tsx`: Provides a custom hook for handling authentication logic.
 
-## Deploy on Vercel
+### `lib`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The `lib/` folder contains integrations with third-party libraries. Here is an example:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `lib/api.ts`: Handles HTTP requests using the axios library or GraphQL requests using Apollo.
+
+### `pages`
+
+The `pages/` folder contains application pages and server-side functionality provided by Next.js. It also includes a subfolder named `/api/` where you can create server-side APIs.
+
+### `styles`
+
+The `styles/` folder contains global styles for the application, including themes, resets, and global configurations.
+
+### `utils`
+
+The `utils/` folder contains utility functions that can be used throughout the application without being tied to any specific context. Here is an example:
+
+- `utils/formatCurrency.ts`: Provides a utility function for formatting currency values.
+
+Please note that this is a simplified representation of the folder structure, and you would need to create the corresponding files and directories in your project.
+
+Remember to keep your code organized and modular, making it easier to maintain and scale your application.
