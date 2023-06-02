@@ -1,6 +1,6 @@
 # Template with Tailwind, Storybook and Jest
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting-started)
@@ -14,11 +14,11 @@
 - [Folder Structure](#folder-structure)
 - [License](#license)
 
-## About
+## ℹ️ About {#about}
 
 This is a template for creating React applications with Next.js, Tailwind CSS, Storybook, and Jest.
 
-## Getting Started
+## 🧗 Getting Started {#getting-started}
 
 ### Prerequisites
 
@@ -44,7 +44,7 @@ This is a template for creating React applications with Next.js, Tailwind CSS, S
   $ yarn storybook
 ```
 
-## Git Workflow
+## 🛤️ Git Workflow {#git-workflow}
 
 ### Branches
 
@@ -77,7 +77,7 @@ When committing changes, you should follow the [Conventional Commits](https://ww
   $ git commit -m "feat: add new feature"
 ```
 
-## Useful extensions
+## 🛠️ Useful extensions {#useful-extensions}
 
 ### Tailwind Intellisense
 
@@ -94,7 +94,7 @@ To make it work with cva, you need to add the following to your settings.json:
   ...
 ```
 
-## Folder Structure
+## 📂 Folder Structure {#folder-structure}
 
 Explanation of each folder and its purpose:
 
@@ -109,6 +109,6 @@ Explanation of each folder and its purpose:
 - styles: contains global styles for the application, including themes, resets, and global configurations
 - utils: contains utility functions that can be used throughout the application without being tied to any specific context
 
-## License
+## 🪪 License {#license}
 
 Created by Gustavo Gava. This project is licensed under the MIT License.
